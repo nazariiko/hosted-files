@@ -4,8 +4,7 @@ var Queue = new TinyQueue();
 
 if (Queue.default) Queue = Queue.default; // temporary webpack fix
 
-module.exports = polylabel;
-module.exports.default = polylabel;
+window.polylabel = polylabel;
 
 function polylabel(polygon, precision, debug) {
     precision = precision || 1.0;
